@@ -73,7 +73,8 @@ for (let i = 0; i < 50; i++) {
     body.style.backgroundColor = 'ghostwhite';
   }
 
-  function dark() {
+  function dark(e) {
+    e.preventDefault()
     balloon_el.style.background = randomColor({ hue: 'monochrome' });
     body.style.backgroundColor = 'rgba(0, 0, 0, 0.616)';
     triangle_el.style.borderBottom = balloon_el.style.background + '7px solid';
