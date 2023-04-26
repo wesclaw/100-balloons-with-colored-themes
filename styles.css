@@ -55,6 +55,24 @@ button {
   margin: 5px;
 }
 
+@media(max-width: 700px){
+  .balloon {
+    width: 60px;
+    height: 80px;
+  }
+
+  .balloon .triangle {
+    width: 0;
+    height: 0;
+    border-left: 7px solid transparent;
+    border-right: 7px solid transparent;
+    position: absolute;
+    bottom: -5%;
+    left: 40%;
+  }
+  
+}
+
 @keyframes up {
   from {
     position: absolute;
