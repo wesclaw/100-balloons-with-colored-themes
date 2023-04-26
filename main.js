@@ -18,6 +18,8 @@ for (let i = 0; i < 100; i++) {
   triangle_el.style.borderBottom = balloon_el.style.background + '7px solid';
   body.appendChild(balloon_el);
 
+
+
     function purpleHurp() {
     balloon_el.style.background = randomColor({ hue: 'purple' });
     triangle_el.style.borderBottom = balloon_el.style.background + '7px solid'; 
