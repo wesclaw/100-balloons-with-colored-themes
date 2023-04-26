@@ -1,0 +1,67 @@
+body {
+  background-color: ghostwhite;
+  margin: 0;
+  height: 100%;
+  width: 100vw;
+  overflow-y: hidden;
+  overflow-x: hidden; 
+}
+
+.balloon {
+  width: 120px;
+  height: 160px;
+  border-radius: 50%;
+  position: relative;
+  animation-name: up;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite; 
+  z-index: -1;
+}
+
+.balloon .triangle {
+  width: 0;
+  height: 0;
+  border-left: 7px solid transparent;
+  border-right: 7px solid transparent;
+  position: absolute;
+  bottom: -3%;
+  left: 45%;
+}
+
+.balloon .string {
+  position: absolute;
+  bottom: -93%;
+  left: 49.5%;
+  height: 90%;
+  width: 1px;
+  background-color: grey;
+  opacity: 20%;
+}
+
+.actions {
+  text-align: center;
+  z-index: 1;
+}
+
+button {
+  padding: 5px 10px;
+  border-radius: 20px;
+  border: none;
+  font-weight: bold;
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: rgba(0, 0, 0, 0.781);
+  color: ghostwhite;
+  cursor: pointer;
+  margin: 5px;
+}
+
+@keyframes up {
+  from {
+    position: absolute;
+    bottom: -40%;
+  }
+  to {
+    position: absolute;
+    bottom: 150%;
+  }
+}
