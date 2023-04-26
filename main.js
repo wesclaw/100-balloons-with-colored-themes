@@ -80,33 +80,41 @@ for (let i = 0; i < 200; i++) {
 
   const dark_btn = document.getElementById('dark');
   dark_btn.addEventListener('click', dark);
-
+  dark_btn.addEventListener('touchstart', dark)
+  
   const pink = document.getElementById('pink');
   pink.addEventListener('click', pinky);
-
+  pink.addEventListener('touchstart', pinky)
+  
   const cyan = document.getElementById('cyan');
   cyan.addEventListener('click', cyanBuyin);
+  cyan.addEventListener('touchstart', cyanBuyin)
 
   const random = document.getElementById('random');
   random.addEventListener('click', randomFandom);
+  random.addEventListener('touchstart', randomFandom)
 
   const red = document.getElementById('red');
   red.addEventListener('click', redFred);
+  red.addEventListener('touchstart', redFred)
 
   const yellow = document.getElementById('yellow');
   yellow.addEventListener('click', yellowFellow);
+  yellow.addEventListener('touchstart', yellowFellow)
 
   const green = document.getElementById('green');
   green.addEventListener('click', greenMean);
+  green.addEventListener('touchstart', greenMean)
 
   const blue = document.getElementById('blue');
   blue.addEventListener('click', blueFlu);
+  blue.addEventListener('touchstart', blueFlu)
 
   const orange = document.getElementById('orange');
   orange.addEventListener('click', orangeSpor);
+  orange.addEventListener('touchstart', orangeSpor)
 
   const purple = document.getElementById('purple');
   purple.addEventListener('click', purpleHurp);
-
-
+  purple.addEventListener('touchstart', purpleHurp)
 }
