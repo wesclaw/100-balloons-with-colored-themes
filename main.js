@@ -1,5 +1,6 @@
+const body = document.querySelector('body');
+
 for (let i = 0; i < 50; i++) {
-  const body = document.querySelector('body');
   const y = Math.random() * window.innerHeight;
   const x = Math.random() * window.innerWidth;
   const colors = '#' + Math.floor(Math.random() * 16777215).toString(16);
