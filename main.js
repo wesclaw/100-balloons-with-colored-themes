@@ -1,4 +1,4 @@
-for (let i = 0; i < 100; i++) {
+for (let i = 0; i < 200; i++) {
   const body = document.querySelector('body');
   const y = Math.random() * window.innerHeight;
   const x = Math.random() * window.innerWidth;
