@@ -1,22 +1,35 @@
-for (let i = 0; i < 200; i++) {
-  const body = document.querySelector('body');
-  const y = Math.random() * window.innerHeight;
-  const x = Math.random() * window.innerWidth;
-  const colors = '#' + Math.floor(Math.random() * 16777215).toString(16);
-  const speed = Math.floor(Math.random() * 6 + 8) + 's';
-  const balloon_el = document.createElement('div'); 
-  balloon_el.classList.add('balloon');
-  const triangle_el = document.createElement('div');
-  triangle_el.classList.add('triangle');
-  balloon_el.appendChild(triangle_el);
-  const string_el = document.createElement('div');
-  string_el.classList.add('string');
-  balloon_el.appendChild(string_el);
-  balloon_el.style.transform = 'translate3d(' + x + 'px, ' + y + 'px, 0)'; 
-  balloon_el.style.animationDuration = speed;
-  balloon_el.style.background = randomColor();
-  triangle_el.style.borderBottom = balloon_el.style.background + '7px solid';
-  body.appendChild(balloon_el);
+
+
+
+
+const body = document.querySelector('body');
+
+
+
+  for (let i = 0; i < 50; i++) {
+    
+    const y = Math.random() * window.innerHeight;
+    const x = Math.random() * window.innerWidth;
+    const colors = '#' + Math.floor(Math.random() * 16777215).toString(16);
+    const speed = Math.floor(Math.random() * 6 + 8) + 's';
+    const balloon_el = document.createElement('div'); 
+    balloon_el.classList.add('balloon');
+    const triangle_el = document.createElement('div');
+    triangle_el.classList.add('triangle');
+    balloon_el.appendChild(triangle_el);
+    const string_el = document.createElement('div');
+    string_el.classList.add('string');
+    balloon_el.appendChild(string_el);
+    balloon_el.style.transform = 'translate3d(' + x + 'px, ' + y + 'px, 0)'; 
+    balloon_el.style.animationDuration = speed;
+    balloon_el.style.background = randomColor();
+    triangle_el.style.borderBottom = balloon_el.style.background + '7px solid';
+    body.appendChild(balloon_el);
+  
+
+
+  
+ 
 
 
 
@@ -82,6 +95,7 @@ for (let i = 0; i < 200; i++) {
 
   const dark_btn = document.getElementById('dark');
   dark_btn.addEventListener('click', dark);
+  
 
   const pink = document.getElementById('pink');
   pink.addEventListener('click', pinky);
@@ -111,4 +125,5 @@ for (let i = 0; i < 200; i++) {
   purple.addEventListener('click', purpleHurp);
 
 
-}
+
+  }
